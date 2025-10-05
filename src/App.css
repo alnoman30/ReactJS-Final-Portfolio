@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FD853A;
+  --color-secondary: #171717;
+
+  --font-sans: "Numans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
