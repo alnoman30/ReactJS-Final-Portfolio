@@ -1,5 +1,5 @@
 import React from "react";
-import vector1 from "../../assets/vector1.svg";
+import vector1 from "../../assets/vector1.svg?url";
 import { Star } from "lucide-react";
 
 const Hero = () => {
