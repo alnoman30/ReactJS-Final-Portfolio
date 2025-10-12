@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import ToggleDualBtn from "../../components/ToggleDualBtn";
 
 const Hero = () => {
   const personName = "Noman";
@@ -7,7 +8,7 @@ const Hero = () => {
   const experience = "01 Years";
 
   return (
-    <section className="group relative overflow-hidden min-h-screen">
+    <section className="group relative overflow-hidden h-[700px] sm:min-h-screen">
       {/* Hero main content */}
       <div className="section-container transition-transform duration-700 ease-in-out group-hover:translate-y-300">
         <div className="text-center relative">
@@ -37,7 +38,7 @@ const Hero = () => {
             &quot;
           </div>
           <p className="text-secondary text-[16px] font-medium leading-snug">
-            {personName}&apos;s exceptional product design <br /> ensured our
+            {personName}&apos;s exceptional creative development <br /> ensured our
             website&apos;s success.
             <br />
             Highly recommended.
@@ -64,7 +65,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Circle div */}
-      <div className="absolute -bottom-[550px] left-1/2 -translate-x-1/2 w-[300px] md:w-[900px] h-[300px] md:h-[900px] bg-primary/70 rounded-full">
+      <div className="absolute md:-bottom-[550px] left-1/2 -translate-x-1/2 md:w-[900px] md:h-[900px] bg-[#FEB273] rounded-full w-[400px] h-[400px] -bottom-[200px] ">
         <div className="absolute -top-60 transition-all duration-500 ease-in-out opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-115">
           <img
             src="/bg_frame.svg"
@@ -72,12 +73,18 @@ const Hero = () => {
             alt=""
           />
         </div>
-  
       </div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 ">
-          <img src="/bg_person.png" alt="" style={{width:'500px'}} className="relative z-20 w-full h-auto object-contain mt-5"/>
-
-        </div>
+      {/* Bg_person image */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[400px]">
+        <img
+          src="/bg_person.png"
+          alt="" style={{width:'100%'}}
+        />
+      </div>
+      {/* Dual Toggle Button */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full hidden md:flex justify-center">
+            <ToggleDualBtn/>
+      </div>
     </section>
   );
 };
