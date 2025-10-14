@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
   return (
-    <nav className="fixed top-0 left-0 right-0  w-full max-w-[1298px] h-[70px] sm:h-[80px] lg:h-[86px] bg-[#171717] text-white px-10 lg:px-2.5 rounded-[25px] sm:rounded-[35px] lg:rounded-[50px] backdrop-blur-[15px] border border-white mx-auto flex items-center justify-between z-50">
+    <nav className="relative top-0 left-0 right-0  w-full max-w-[1298px] h-[70px] sm:h-[80px] lg:h-[86px] bg-[#171717] text-white px-10 lg:px-2.5 rounded-[25px] sm:rounded-[35px] lg:rounded-[50px] backdrop-blur-[15px] border border-white mx-auto flex items-center justify-between z-50">
       
       {/* Left Menu */}
       <div className="hidden lg:flex flex-1 justify-start gap-2.5">
