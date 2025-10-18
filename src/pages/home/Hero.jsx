@@ -8,7 +8,7 @@ const Hero = () => {
   const experience = "01 Years";
 
   return (
-    <section className="group relative overflow-hidden h-[700px] sm:min-h-screen">
+    <section className="group relative overflow-hidden h-[700px] sm:min-h-[calc(100vh-70px)]">
       {/* Hero main content */}
       <div className="section-container transition-transform duration-700 ease-in-out group-hover:translate-y-300">
         <div className="text-center relative">
